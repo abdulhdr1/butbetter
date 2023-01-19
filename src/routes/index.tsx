@@ -5,7 +5,6 @@ import { Gradient } from "~/assets/gradient";
 export default component$(() => {
 	useClientEffect$(() => {
 		const gradient = new Gradient();
-
 		gradient.initGradient("#gradient-canvas");
 	});
 
@@ -18,7 +17,7 @@ export default component$(() => {
 			/>
 			<div class={"relative inset-y-64 font-extrabold text-7xl"}>
 				<h1 class={""}>Reimagine</h1>
-				<h1 class="mix-blend-difference text-white top-20">
+				<h1 class={`mix-blend-difference text-white top-20`}>
 					{" "}
 					everything{" "}
 				</h1>
@@ -28,11 +27,12 @@ export default component$(() => {
 });
 
 export const head: DocumentHead = {
-	title: "Welcome to Qwik",
+	title: "But Better",
 	meta: [
 		{
 			name: "description",
-			content: "Qwik site description",
+			content:
+				"What if things were better? A myriad of ideas and concepts that could change the world.",
 		},
 	],
 };
